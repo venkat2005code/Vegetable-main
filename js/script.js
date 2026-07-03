@@ -73,13 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.dir-text').forEach(el => el.textContent = 'LTR');
     }
 
-    // 3. Routing init (default to Home 1 or hash)
-    const hash = window.location.hash.substring(1);
-    if (hash && ['home1', 'home2', 'about', 'services', 'contact'].includes(hash)) {
-      navigate(hash);
-    } else {
-      navigate('home1');
-    }
+
 
     // 4. Scrolled header effect
     window.addEventListener('scroll', () => {
