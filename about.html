@@ -13,6 +13,11 @@
 </head>
 
 <body>
+  <script>
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-theme');
+    }
+  </script>
 
   <!-- --- HEADER & NAVIGATION --- -->
   <header>
@@ -56,15 +61,10 @@
           <li class="nav-item">
             <a href="blog.html" class="nav-link">Blog</a>
           </li>
-          
-          <li class="nav-item">
-            <a href="shop.html" class="nav-link" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin-left: 8px;">Shop Ferments</a>
-          </li>
-
-
           <!-- Mobile-only controls block inside nav-menu -->
           <li class="mobile-only-controls-li">
             <div class="mobile-only-controls">
+              <a href="shop.html" class="nav-link" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin: 15px 0 0 0; justify-content: center;">Shop Ferments</a>
               <div
                 style="display: flex; gap: 12px; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color); width: 100%;">
                 <!-- LTR/RTL Toggle -->
@@ -130,7 +130,7 @@
           </svg>
         </button>
 
-
+        <a href="shop.html" class="nav-link desktop-shop-btn" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin-left: 0;">Shop Ferments</a>
 
         <!-- Mobile Hamburger Menu Button -->
         <button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle Navigation Menu">

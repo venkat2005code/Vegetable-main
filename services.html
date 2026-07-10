@@ -13,6 +13,11 @@
 </head>
 
 <body>
+  <script>
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-theme');
+    }
+  </script>
 
   <!-- --- HEADER & NAVIGATION --- -->
   <header>
@@ -57,14 +62,12 @@
             <a href="blog.html" class="nav-link">Blog</a>
           </li>
           
-          <li class="nav-item">
-            <a href="shop.html" class="nav-link" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin-left: 8px;">Shop Ferments</a>
-          </li>
 
 
           <!-- Mobile-only controls block inside nav-menu -->
           <li class="mobile-only-controls-li">
             <div class="mobile-only-controls">
+              <a href="shop.html" class="nav-link" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin: 15px 0 0 0; justify-content: center;">Shop Ferments</a>
               <div
                 style="display: flex; gap: 12px; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color); width: 100%;">
                 <!-- LTR/RTL Toggle -->
@@ -130,7 +133,7 @@
           </svg>
         </button>
 
-
+        <a href="shop.html" class="nav-link desktop-shop-btn" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin-left: 0;">Shop Ferments</a>
 
         <!-- Mobile Hamburger Menu Button -->
         <button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle Navigation Menu">
@@ -363,6 +366,103 @@
             </div>
             <div class="service-img-col" style="height: 300px; overflow: hidden; border-radius: var(--border-radius);">
               <img src="new_services_catering.jpeg" style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section 7: Services Pricing -->
+      <section id="svs7" class="pricing-sec" style="margin-bottom: 60px;">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Service Pricing</span>
+            <h2 class="section-title">Transparent Service Packages</h2>
+            <p class="section-desc">Choose the right tier for your restaurant, event, or private culinary needs.</p>
+          </div>
+
+          <div class="pricing-grid">
+            <!-- Card 1 -->
+            <div class="pricing-card">
+              <span class="pricing-title">Wholesale Starter</span>
+              <div class="pricing-price">$199<span>/mo</span></div>
+              <ul class="pricing-features">
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  20 lbs of Seasonal Ferments
+                </li>
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Weekly Local Delivery
+                </li>
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Standard Food-Safe Tubs
+                </li>
+              </ul>
+              <button class="btn btn-secondary"
+                onclick="window.location.href='contact.html';">Inquire Now</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="pricing-card popular">
+              <span class="popular-badge">Most Requested</span>
+              <span class="pricing-title">Event Pickle Bar</span>
+              <div class="pricing-price">$450<span>/event</span></div>
+              <ul class="pricing-features">
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Rustic Self-Serve Tasting Flights
+                </li>
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Custom Jar Tagging
+                </li>
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Trained Fermentologist On-site
+                </li>
+              </ul>
+              <button class="btn btn-primary"
+                onclick="window.location.href='contact.html';">Book Event</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="pricing-card">
+              <span class="pricing-title">Private Seminar</span>
+              <div class="pricing-price">$299<span>/class</span></div>
+              <ul class="pricing-features">
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Up to 10 Participants
+                </li>
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Hands-on Prep Stations
+                </li>
+                <li class="pricing-feature">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12"></polyline>
+                  </svg>
+                  Includes Pairings & Lunch
+                </li>
+              </ul>
+              <button class="btn btn-secondary"
+                onclick="window.location.href='contact.html';">Reserve Date</button>
             </div>
           </div>
         </div>

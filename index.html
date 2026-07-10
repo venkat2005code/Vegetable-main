@@ -13,6 +13,11 @@
 </head>
 
 <body>
+  <script>
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-theme');
+    }
+  </script>
 
   <!-- --- HEADER & NAVIGATION --- -->
   <header>
@@ -57,15 +62,14 @@
             <a href="blog.html" class="nav-link">Blog</a>
           </li>
           
-          <li class="nav-item">
-            <a href="shop.html" class="nav-link" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin-left: 8px;">Shop Ferments</a>
-          </li>
+
 
           
 
           <!-- Mobile-only controls block inside nav-menu -->
           <li class="mobile-only-controls-li">
             <div class="mobile-only-controls">
+              <a href="shop.html" class="nav-link" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin: 15px 0 0 0; justify-content: center;">Shop Ferments</a>
               <div
                 style="display: flex; gap: 12px; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color); width: 100%;">
                 <!-- LTR/RTL Toggle -->
@@ -131,7 +135,7 @@
           </svg>
         </button>
 
-
+        <a href="shop.html" class="nav-link desktop-shop-btn" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin-left: 0;">Shop Ferments</a>
 
         <!-- Mobile Hamburger Menu Button -->
         <button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle Navigation Menu">
@@ -594,7 +598,7 @@
           </div>
 
           <div style="background: rgba(31, 21, 36, 0.5); border: 1px solid rgba(255, 255, 255, 0.05); padding: 40px; border-radius: var(--border-radius); text-align: center; margin-top: 20px;">
-            <p style="color: var(--text-secondary); font-size: 1.1rem; margin-bottom: 24px;">Discover our collection of wild-fermented recipes, brewing tutorials, and deep-dives into lacto-fermentation science.</p>
+            <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-bottom: 24px;">Discover our collection of wild-fermented recipes, brewing tutorials, and deep-dives into lacto-fermentation science.</p>
             <a href="blog.html" class="btn btn-primary" style="font-size: 1.1rem; padding: 12px 32px;">Read Our Blog</a>
           </div>
         </div>

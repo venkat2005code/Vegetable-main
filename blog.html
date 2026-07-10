@@ -13,6 +13,11 @@
 </head>
 
 <body>
+  <script>
+    if (localStorage.getItem('theme') === 'light') {
+      document.body.classList.add('light-theme');
+    }
+  </script>
 
   <!-- --- HEADER & NAVIGATION --- -->
   <header>
@@ -57,15 +62,13 @@
             <a href="blog.html" class="nav-link">Blog</a>
           </li>
           
-          <li class="nav-item">
-            <a href="shop.html" class="nav-link" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin-left: 8px;">Shop Ferments</a>
-          </li>
 
           
 
           <!-- Mobile-only controls block inside nav-menu -->
           <li class="mobile-only-controls-li">
             <div class="mobile-only-controls">
+              <a href="shop.html" class="nav-link" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin: 15px 0 0 0; justify-content: center;">Shop Ferments</a>
               <div
                 style="display: flex; gap: 12px; margin-top: 15px; padding-top: 15px; border-top: 1px solid var(--border-color); width: 100%;">
                 <!-- LTR/RTL Toggle -->
@@ -131,7 +134,7 @@
           </svg>
         </button>
 
-
+        <a href="shop.html" class="nav-link desktop-shop-btn" style="color: var(--primary); font-weight: 800; border: 1px solid var(--primary); border-radius: 8px; padding: 4px 12px; margin-left: 0;">Shop Ferments</a>
 
         <!-- Mobile Hamburger Menu Button -->
         <button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle Navigation Menu">
@@ -151,9 +154,9 @@
 
 <div id="blog-view" class="view-section active">
   <section class="hero-1" style="background: var(--surface-secondary); padding: 120px 0;">
-    <div class="container text-center">
-      <h1 class="hero-title" style="color: var(--primary);">Fermentology Blog</h1>
-      <p class="hero-desc">Recipes, cooking tutorials, and deep-dives into the biochemistry of wild lacto-fermentation.</p>
+    <div class="container" style="text-align: center;">
+      <h1 class="hero-title" style="color: var(--text-primary); font-weight: bold;">Fermentology Blog</h1>
+      <p class="hero-desc" style="color: var(--text-primary); max-width: 600px; margin: 0 auto; opacity: 0.9;">Recipes, cooking tutorials, and deep-dives into the biochemistry of wild lacto-fermentation.</p>
     </div>
   </section>
 

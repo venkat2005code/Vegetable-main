@@ -541,6 +541,8 @@ body.light-theme .hero-1::before {
   position: relative;
   z-index: 2;
   max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero-title {
@@ -561,6 +563,7 @@ body.light-theme .hero-1::before {
   display: flex;
   gap: 16px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* 2. Pickle Varieties Showcase */
@@ -1573,6 +1576,7 @@ body.light-theme .hero-1::before {
   position: relative;
   z-index: 2;
   color: var(--text-primary);
+  text-align: justify;
 }
 
 .press-source {
