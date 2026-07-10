@@ -1557,6 +1557,9 @@ body.light-theme .hero-1::before {
   border-radius: var(--border-radius);
   padding: 30px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .press-quote-card::before {
